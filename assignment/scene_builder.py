@@ -85,29 +85,80 @@ cmds.move(building_x, building_height / 2.0, building_z, building)
 #   - Name the object meaningfully with the 'name' parameter or cmds.rename().
 #   - Position it so it sits on the ground (not floating or buried).
 # ---------------------------------------------------------------------------
+Oak_width = 1
+Oak_height = 8
+Oak_depth = 1
+Oak_x = -5
+Oak_z = 5
 
-
+Oak = cmds.polyCube(
+    name="Oak_01",
+    width=Oak_width,
+    height=Oak_height,
+    depth=Oak_depth,
+)[0]
+cmds.move(Oak_x, Oak_height / 2.0, Oak_z, Oak)
 # ---------------------------------------------------------------------------
 # TODO: Add Object 3
 # ---------------------------------------------------------------------------
+Spruce_width = 2
+Spruce_height = 11
+Spruce_depth = 1
+Spruce_x = 5
+Spruce_z = -5
 
-
+Spruce = cmds.polyCube(
+    name="Spruce_01",
+    width=Spruce_width,
+    height=Spruce_height,
+    depth=Spruce_depth,
+)[0]
+cmds.move(Spruce_x, Spruce_height / 2.0, Spruce_z, Spruce)
 # ---------------------------------------------------------------------------
 # TODO: Add Object 4
 # ---------------------------------------------------------------------------
+Spruce_width = 2
+Spruce_height = 11
+Spruce_depth = 1
+Spruce_x = 5
+Spruce_z = -5
 
-
+Spruce = cmds.polyCube(
+    name="Spruce_01",
+    width=Spruce_width,
+    height=Spruce_height,
+    depth=Spruce_depth,
+)[0]
+cmds.move(Spruce_x, Spruce_height / 2.0, Spruce_z, Spruce)
 # ---------------------------------------------------------------------------
 # TODO: Add Object 5
 # ---------------------------------------------------------------------------
+Sun_radius = 1
+Sun_x = 7
+Sun_z = -7
 
-
+Sun = cmds.polySphere(
+    name= "Sun",
+    radius=Sun_radius,
+)[0]
+cmds.move(Sun_x, Sun_radius + 18.0, Sun_z, Sun)
 # ---------------------------------------------------------------------------
 # TODO (Optional): Add more objects to make your scene more interesting!
 # Consider: trees, lamp posts, fences, vehicles, animals, etc.
 # ---------------------------------------------------------------------------
+Spruce_width = 2
+Spruce_height = 11
+Spruce_depth = 1
+Spruce_x = 5
+Spruce_z = -5
 
-
+Spruce = cmds.polyCube(
+    name="Spruce_01",
+    width=Spruce_width,
+    height=Spruce_height,
+    depth=Spruce_depth,
+)[0]
+cmds.move(Spruce_x, Spruce_height / 2.0, Spruce_z, Spruce)
 # ---------------------------------------------------------------------------
 # Frame All -- so the whole scene is visible in the viewport.
 # (This is provided for you -- do not remove.)
